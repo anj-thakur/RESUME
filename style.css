@@ -1,0 +1,48 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+[data-theme="dark"] {
+  --bg-color: #111;
+  --text-color: #eee;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+input, textarea, button {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 400px;
+}

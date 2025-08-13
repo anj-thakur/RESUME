@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">Toggle Theme</button>
+  </nav>
+
+  <section id="home"><h1>Welcome to My Portfolio</h1></section>
+  <section id="about"><h2>About Me</h2><p>Brief bio goes here.</p></section>
+  <section id="skills"><h2>Skills</h2><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></section>
+  <section id="projects"><h2>Projects</h2><p>Describe your projects here.</p></section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="admin">
+    <h2>Admin Login</h2>
+    <div id="loginSection">
+      <input type="password" id="adminPass" placeholder="Enter Admin Password" />
+      <button onclick="loginAdmin()">Login</button>
+    </div>
+    <div id="responseSection" style="display: none;">
+      <h3>User Responses</h3>
+      <ul id="responseList"></ul>
+      <button onclick="logoutAdmin()">Logout</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
